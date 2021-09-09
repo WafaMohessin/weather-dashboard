@@ -1,5 +1,7 @@
 .header {
-    background-color: royalblue;
+  
+
+    background-color: rgb(81, 214, 238);
     color: white;
 }
 
@@ -8,7 +10,7 @@ h1{
     padding:20px;
     margin: auto;
     text-align: center;
-    font-size: 36px;
+    font-size: 42px;
 }
 
 main{
@@ -19,29 +21,32 @@ main{
 }
 
 .search-city{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: lightgray;
-    width: 20%;
-    height: 750px;
+    width: 30%;
+    height:300px;
     
 }
 
 h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:18px;
+    font-size:24px;
     margin-left: 20px;
 }
 
-.search-input{
-    width: 200px;
-    height:20px;
+.inputValue{
+    width: 300px;
+    height:30px;
     margin:10px;
 }
 
-button{
-   width: 200px;
-   height: 20px;
+.button{
+   width: 300px;
+   height:30px;
    margin: 10px;
-   align-content: center;
+
 }
 
 .content {
@@ -52,9 +57,11 @@ button{
 .display {
     border: 1px solid black;
     margin: 0px 20px 20px 20px;
+    height: 300px;
 }
 
 .weather-box{
+    height: 300px;
     border: 1px solid black;
     margin: 20px;
 }

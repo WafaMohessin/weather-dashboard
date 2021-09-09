@@ -9,6 +9,10 @@ var description= document.querySelector('.description')
 var tempreture= document.querySelector('.tempreture')
 
 
+// Today's date
+//let date = moment().format('M/D/YYYY')
+
+
 button.addEventListener ('click', function() {
 
 fetch ('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=d92c1de5dbde6aa07889a7702b188571')
