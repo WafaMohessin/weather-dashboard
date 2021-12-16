@@ -6,17 +6,24 @@
     --pastel-pink: #efa7a7ff;
     --charcoal: #364958ff;
     }
+
     body {
-        background-color: var(--light-cyan);
-        color: var(--deep-space-sparkle)
+        background-color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
     }
+
     header{
-        background: var(--spanish-pink);
+        background: rgb(6, 218, 218);
         text-align: center;
+        color:white;
     }
+
     #search{
         background: var(--opal);
     }
+
+
     .five {
     background: var(--spanish-pink);
     padding: 10px;
