@@ -17,10 +17,13 @@ button.addEventListener ('click', function() {
 
 fetch ('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=d92c1de5dbde6aa07889a7702b188571')
 .then(response => response.json())
-.then(data => {
+.then(data => { 
+
+    console.log(data )
 
 var nameValue = data['name'];
-var tempretureValue = data['main']['tempreture'];
+var tempretureValue = data['main']['temp'];
+
 var descriptionValue = data['weather'][0]['description'];
 
 name.innerHTML=nameValue;

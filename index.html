@@ -4,44 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weatherdashboard</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Weather Dashboard</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-<section class="header">
-    <h1>Weather Dashboard</h1>
-</section>
-
-<main>
-
-    <section class="search-city">
-    <h2>Search for a City:</h2>
-    <input class="inputValue" type="text" placeholder="Enter a city">
-    <input class="button" type="search" value="Search" >
-</section>
-
-
-<section class="content">
-    <div class="display">
-        <h2 class="name"></h2>
-        <p class="description"></p>
-        <p class="tempreture"></p>
+    <header><h1>Weather Dashboard</h1></header>
+<main class="container row">
+    <div id="searchCol" class="col-4">
+        <h2>Search for a City</h2>
+        <input type="text" placeholder="City Name" id="cityName">
+        <button type="button" id="searchBTN" class="btn btn-primary">Search</button>
+        <ul id="history">
+        </ul>
     </div>
-
-    <div class="weather-box">
-        <h2>5-Day Forcast</h2>
+    <div id="Weather" class="col-8">
+            <h2 id="0location"></h2>
+            <div id="0date"><h3>Date</h3></div>
+            <div><img  id="0conditionIcon"></div>
+        <h3>Description</h3>
+            <div id="0description"></div>
+        <h3>Temperature:</h3>
+            <h2 id="0temp"></h2>
+        <h3>Humidity</h3>
+            <div id="0humidity"></div>
+        <h3>Wind</h3>
+            <div id="0wind"></div>
+        <h3>UV</h3>
+            <div id="0uv"></div>   
+        
+    <div id="5day">
+            <h2>5-Day Forecast</h2> 
+        <div class="row">
+            <div class="col-sm-2 five">
+                <h2 id="1location"></h2>
+                <div id="1date"></div>
+                <div><img  id="1conditionIcon"></div>
+                <div id="1description"></div>
+                <p>Temperature</p>
+                <h2 id="1temp"></h2>
+                <p>Humidity</p>
+                <div id="1humidity"></div>
+                <p>Wind Speed</p>
+                <div id="1wind"></div>
+            </div>   
+            <div class="col-sm-2 five">
+                <h2 id="2location"></h2>
+                <div id="2date"></div>
+                <div><img  id="2conditionIcon"></div>
+                <div id="2description"></div>
+                <p>Temperature</p>
+                <h2 id="2temp"></h2>
+                <p>Humidity</p>
+                <div id="2humidity"></div>
+                <p>Wind Speed</p>
+                <div id="2wind"></div>
+            </div>   
+            <div class="col-sm-2 five">
+                <h2 id="3location"></h2>
+                <div id="3date"></div>
+                <div><img  id="3conditionIcon"></div>
+                <div id="3description"></div>
+                <p>Temperature</p>
+                <h2 id="3temp"></h2>
+                <p>Humidity</p>
+                <div id="3humidity"></div>
+                <p>Wind Speed</p>
+                <div id="3wind"></div>
+            </div>   
+            <div class="col-sm-2 five">
+                <h2 id="4location"></h2>
+                <div id="4date"></div>
+                <div><img  id="4conditionIcon"></div>
+                <div id="4description"></div>
+                <p>Temperature</p>
+                <h2 id="4temp"></h2>
+                <p>Humidity</p>
+                <div id="4humidity"></div>
+                <p>Wind Speed</p>
+                <div id="4wind"></div>
+            </div>   
+            <div class="col-sm-2 five">
+                <h2 id="5location"></h2>
+                <div id="5date"></div>
+                <div><img  id="5conditionIcon"></div>
+                <div id="5description"></div>
+                <p>Temperature</p>
+                <h2 id="5temp"></h2>
+                <p>Humidity</p>
+                <div id="5humidity"></div>
+                <p>Wind Speed</p>
+                <div id="5wind"></div>
+            </div>   
+        </div>
     </div>
-   
-    
-    
-</section>
-
-
-
 </main>
-
-
 <script src="script.js"></script>
 </body>
 </html>
