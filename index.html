@@ -11,99 +11,119 @@
 </head>
 
 <body>
-    <header><h1>Weather Dashboard</h1>
+    <header>
+        <h1>Weather Dashboard</h1>
     </header>
 
-    <section class="container row">
-    <div id="searchCol" class="col-4">
+    <section class="container row screen">
+    <div id="searchBar" class="col-4">
         <h2>Search for a City</h2>
-        <input type="text" placeholder="name of city" id="cityName">
+        <input type="text" placeholder="name of city" id="cityName" field>
         <button type="button" id="searchBTN" class="btn btn-warning">Search</button>
-        <ul id="history">
+        <ul id="cupcake">
         </ul>
     </div>
+    </section>
 
     <div id="Weather" class="col-8">
-            <h2 id="0location"></h2>
-            <div id="0date"><h3>Date</h3></div>
-            <div><img  id="0conditionIcon"></div>
-            <h3>Description</h3>
-            <div id="0description"></div>
-            <h3>Temperature:</h3>
-            <h2 id="0temp"></h2>
-            <h3>Humidity</h3>
-            <div id="0humidity"></div>
-            <h3>Wind</h3>
-            <div id="0wind"></div>
-            <h3>UV</h3>
-            <div id="0uv"></div>   
+            <h2 id="location"></h2>
+            <div id="date"><h4>Date:</h4></div>
+            <div><img  id="conditionIcon"></div>
+            <h5>Description</h5>
+            <div id="description"></div>
+            <h5>Temperature:</h5>
+            <h2 id="temp"></h2>
+            <h5>Humidity:</h5>
+            <div id="humidity"></div>
+            <h5>Wind:</h5>
+            <div id="wind"></div>
+            <h5>UV:</h5>
+            <div id="uv"></div>   
         
-    <div id="5day">
-            <h2>5-Day Forecast</h2> 
+    
+            <h2 class="forcast">Forecast for the nexr 5 days</h2> 
+
             <div class="row">
-            <div class="col-sm-2 five">
-                <h2 id="1location"></h2>
-                <div id="1date"></div>
-                <div><img  id="1conditionIcon"></div>
-                <div id="1description"></div>
+
+            <div class="col-sm-2 fiveday">
+                <h2 id="firsyDaylocation"></h2>
+                <div>
+                    <img id="firstDayconditionIcon">
+                </div>
+                <div id="firstDaydate"></div>
+                <div id="firstDaydescription"></div>
                 <p>Temperature</p>
-                <h2 id="1temp"></h2>
+                <h2 id="firstDaytemp"></h2>
                 <p>Humidity</p>
-                <div id="1humidity"></div>
+                <div id="firstDayhumidity"></div>
                 <p>Wind Speed</p>
-                <div id="1wind"></div>
+                <div id="firstDaywind"></div>
             </div>   
-            <div class="col-sm-2 five">
-                <h2 id="2location"></h2>
-                <div id="2date"></div>
-                <div><img  id="2conditionIcon"></div>
-                <div id="2description"></div>
+
+            <div class="col-sm-2 fiveday">
+                <h2 id="secondDaylocation"></h2>
+                <div>
+                    <img  id="secondDayconditionIcon">
+                </div>
+                <div id="secondDaydate"></div>
+                <div id="secondDaydescription"></div>
                 <p>Temperature</p>
-                <h2 id="2temp"></h2>
+                <h2 id="secondDaytemp"></h2>
                 <p>Humidity</p>
-                <div id="2humidity"></div>
+                <div id="secondDayhumidity"></div>
                 <p>Wind Speed</p>
-                <div id="2wind"></div>
+                <div id="secondDaywind"></div>
             </div>   
-            <div class="col-sm-2 five">
-                <h2 id="3location"></h2>
-                <div id="3date"></div>
-                <div><img  id="3conditionIcon"></div>
-                <div id="3description"></div>
+
+            <div class="col-sm-2 fiveday">
+                <h2 id="thirdDaylocation"></h2>
+                <div>
+                    <img  id="thirdDayconditionIcon">
+                </div>
+                <div id="thirdDaydate"></div>
+                <div id="thirdDaydescription"></div>
                 <p>Temperature</p>
-                <h2 id="3temp"></h2>
+                <h2 id="thirdDaytemp"></h2>
                 <p>Humidity</p>
-                <div id="3humidity"></div>
+                <div id="thirdDayhumidity"></div>
                 <p>Wind Speed</p>
-                <div id="3wind"></div>
+                <div id="thirdDaywind"></div>
             </div>   
-            <div class="col-sm-2 five">
-                <h2 id="4location"></h2>
-                <div id="4date"></div>
-                <div><img  id="4conditionIcon"></div>
-                <div id="4description"></div>
+
+            <div class="col-sm-2 fiveday">
+                <h2 id="fourthDaylocation"></h2>
+                <div>
+                    <img  id="fourthconditionIcon">
+                </div>
+                <div id="fourthDaydate"></div>
+                <div id="fourthDaydescription"></div>
                 <p>Temperature</p>
-                <h2 id="4temp"></h2>
+                <h2 id="fourthDaytemp"></h2>
                 <p>Humidity</p>
-                <div id="4humidity"></div>
+                <div id="fourthDayhumidity"></div>
                 <p>Wind Speed</p>
-                <div id="4wind"></div>
-            </div>   
-            <div class="col-sm-2 five">
-                <h2 id="5location"></h2>
-                <div id="5date"></div>
-                <div><img  id="5conditionIcon"></div>
-                <div id="5description"></div>
+                <div id="fourthDaywind"></div>
+            </div>  
+
+            <div class="col-sm-2 fiveday">
+                <h2 id="fifthDaylocation"></h2>
+                <div>
+                    <img  id="fifthDayconditionIcon">
+                </div>
+                <div id="fifthDaydate"></div>
+                <div id="fifthDaydescription"></div>
                 <p>Temperature</p>
-                <h2 id="5temp"></h2>
+                <h2 id="fifthDaytemp"></h2>
                 <p>Humidity</p>
-                <div id="5humidity"></div>
+                <div id="fifthDayhumidity"></div>
                 <p>Wind Speed</p>
-                <div id="5wind"></div>
-            </div>   
+                <div id="fifthDaywind"></div>
+            </div> 
+    
         </div>
     </div>
-</secction>
+
 <script src="script.js"></script>
+
 </body>
 </html>
