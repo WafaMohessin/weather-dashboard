@@ -8,9 +8,13 @@ header{
         height: 150px;
         padding-top: 20px;
         background: #105ff3;
-        text-align: center;
         color:white;
 }
+
+h1{
+    margin-left: 60px;
+}
+
 
 .screen{
     margin-left: 20px; 
